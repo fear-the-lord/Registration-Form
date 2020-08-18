@@ -17,6 +17,7 @@ mysqli_select_db($con, 'usersignup');
 $name = $_POST['user'];
 $password = $_POST['password'];
 
+
 $q = "select * from signin where name = '$name' && password = '$password'";
 $result = mysqli_query($con, $q);
 
